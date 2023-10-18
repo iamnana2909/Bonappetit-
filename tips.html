@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Culinary website" content="Cooking tutorial">
+    <meta name="keywords" content="cooking recipe, cooking tutorial, cooking tips">
+    <meta name="author" content="Nana Huynh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> BonAppetit! </title>
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+    <!--     Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url('images/background.png');">
+        <!----------NAVIGATION---------->
+        <header>
+            <a href="index.html"><img src="images/Bonappetit!.png" alt="Bonappetit! logo" id="Home" width="190" height="56"> </a>
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a href="recipes.html">Recipe</a>
+                    <a href="tips.html">Tips</a>
+                    <a href="howtos.html">How-tos</a>
+                    <a href="aboutus.html">About us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </header>
