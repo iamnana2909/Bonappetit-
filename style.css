@@ -17,6 +17,10 @@ COLOURS
 /* Import Space Grotesk and Open Sans fonts from Google font */
 
 /* GLOBAL STYLE */
+a {
+    text-decoration: none;
+}
+
 p {
     font-family: 'Space Grotesk', sans-serif;
 
@@ -60,8 +64,7 @@ header {
 
 .search input[type=text] {
     width: 800px;
-    height: 30px;
-
+    height: 25px;
     border: none;
 
 }
@@ -77,12 +80,27 @@ header {
 .search button {
     background-color: #170002;
     color: #f2f2f2;
-
-
-
-    font-size: 3px;
     border: none;
     cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* Define media queries for different screen sizes */
+@media screen and (max-width: 960px) {
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search button {
+        display: none
+    }
 }
 
 
@@ -153,6 +171,7 @@ header {
 /* CONTENT AREA 1*/
 .content1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     /* Center horizontally */
     align-items: center;
@@ -193,23 +212,6 @@ header {
 /* Hide the images by default */
 .mySlides {
     display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -269,38 +271,74 @@ header {
 }
 
 /* CONTENT AREA 2*/
-.toprecent {
 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    /* Adjust the column width as needed */
-    grid-gap: 20px;
-    /* Adjust the gap between items as needed */
-    max-width: 900px;
+.toprecent a {
+
+
+    text-decoration: none;
+    background-color: white;
+
 }
 
-.toprecent section {
-    border: 1px solid #ccc;
-    /* Optional: Add a border to each section */
-    padding: 20px;
-    /* Optional: Add padding to each section */
-    text-align: center;
-    /* Optional: Center align the content within each section */
+.toprecent a:hover {
+    box-shadow: 5px 10px darkred;
 }
 
-#toprecentc {
-    text-align: center;
+.toprecent h2 {
+    color: darkred;
+    font-size: 1.3em;
+}
+
+.toprecent p {
+    color: #170002;
+
+
+
+}
+
+.card-content {
+    width: 271px;
+    margin: 0 auto;
 }
 
 
-.toprecentg {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
+
+
+@media screen and (min-width: 300px) {
+
+    .toprecent a {
+
+        margin: 13px;
+    }
+
+    .toprecentg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .toprecent {
+        flex: 0 1 calc(50% - 0.5em);
+        display: flex;
+    }
 }
 
+
+
+@media screen and (min-width: 960px) {
+    .toprecent a {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .toprecent {
+        flex: 0 1 calc(33% - 1em);
+    }
+
+    .toprecentg {
+        margin-top: inherit;
+    }
+}
 
 
 
@@ -348,38 +386,37 @@ details[open] div {
 .fa {
     padding: 10px;
     font-size: 10px;
-
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 /* Add a hover effect */
 .fa:hover {
-    opacity: 0.7;
+    background: darkred;
 }
 
 /* Set a specific color for each brand */
 
 /* Facebook */
 .fa-facebook {
-    background: darkred;
     color: white;
 }
 
 /* Insta */
 .fa-instagram {
-    background: darkred;
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-pinterest {
     color: white;
 }
 
 /* Newsletter */
-/* Style the form element with a border around it */
-form {}
-
-
-
-
 /* Style the input elements and the submit button */
 input[type=text],
 input[type=submit] {
@@ -408,12 +445,20 @@ input[type=submit]:hover {
 }
 
 /* Footer */
+form {
+    margin: 20px;
+}
+
 .footer {
     color: white;
     background-color: #170002;
     margin-top: 90px;
     display: grid;
-    grid-template-columns: 50% 50%
+
+}
+
+.footerleft {
+    margin-left: 15px;
 }
 
 footer ul {
@@ -425,7 +470,6 @@ footer ul {
 }
 
 footer li {
-
     grid-column: 2/3;
     display: inline;
     /* Display li elements inline */
@@ -436,5 +480,371 @@ footer li {
 footer a {
     color: white;
     text-decoration: none;
+}
 
+.footerlink a:hover {
+    color: darkred;
+}
+
+/* Responsive footer for different screen size */
+@media screen and (max-width: 400px) {
+    .footer {
+        display: grid;
+
+
+    }
+
+    .footerlink {
+        padding-left: 0px;
+
+        grid-row: 2/3;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 50% 50%
+    }
+
+    .footerlink {
+        padding-left: 0px;
+        grid-column: 2/3;
+        direction:
+    }
+}
+
+
+/* Banner
+------------------------------------------------- */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    /* Position the text vertically centered */
+    left: 50%;
+    /* Position the text horizontally centered */
+    transform: translate(-50%, -50%);
+    /* Center the text precisely */
+    text-align: center;
+    /* Center-align text within the container */
+    padding: 20px;
+    /* Add padding for better text legibility */
+}
+
+.banner-text h1 {
+    color: darkred;
+    font-size: 2em;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    position: 50%;
+    opacity: 0.5;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* Center the banner horizontally on the page */
+}
+
+@media screen and (max-width: 960px) {
+    .banner-text {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner-text {
+        font-size: 30%;
+    }
+}
+
+/* RECIPE
+------------------------------------------------- */
+.recipe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+
+}
+
+.ourrecipe {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.ourrecipe h1 {
+    text-align: center;
+}
+
+.trending {
+    display: grid;
+    grid-column: 1/5;
+    text-align: center;
+    justify-content: space-evenly;
+    /* Horizontally center align items */
+    align-items: center;
+    /* Vertically center align items */
+
+}
+
+.trending img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.trending section {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-row: 2/3;
+}
+
+.trending h2 {
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.trending a {
+    color: darkred;
+    font-size: 1.5em;
+}
+
+
+.popular {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+
+.aside {
+    margin: 100px;
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.video {
+    margin: 0px;
+    padding: 0px;
+}
+
+.classic {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    text-align: center;
+    justify-content: space-evenly;
+    /* Horizontally center align items */
+}
+
+.classic section {
+
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-row: 4/5;
+}
+
+.classic img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.aisde img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.popular img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media screen and (max-width: 960px) {
+    .recipe {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .ourrecipe {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .trending {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .trending h2 {
+        display: none;
+
+    }
+
+
+
+
+
+
+    .popular {
+        text-align: center;
+        justify-content: center;
+
+        margin: 0;
+        grid-column: 1/3;
+        grid-row: 3/4;
+
+    }
+
+    .aside {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .classic {
+        grid-row: 5/6;
+    }
+
+    .classic {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+/* TIPS
+------------------------------------------------- */
+
+.tips {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 15px;
+
+
+}
+
+.tips section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.tips img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About us
+------------------------------------------------- */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    
+   
+    
+}
+.us {
+    display: flex;
+    flex-wrap: wrap;
+        
+    }
+.intouch {
+    text-align: center;
+}  
+.contact-section {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    text-align: center;
+    }
+
+/* Contact form
+------------------------------------------------- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contactform {
+    
+    width: 650px;
+    border-radius: 5px;
+
+    padding: 20px;
+    margin:auto;
+}
+
+iframe {
+    margin: 0px 255px 0px 255px;
+    /* Add margin to the iframe */
+}
+
+.findus {
+    margin: 0px 255px 25px 255px;
+    /* Add margin to the findus element */
 }
