@@ -11,6 +11,10 @@
     <title> BonAppetit! </title>
     <link rel="canonical" href="https://yourwebsite.com/">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 
     <script>
         function myFunction() {
@@ -37,9 +41,8 @@
 
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="recipes.html">Recipe</a>
+                    <a href="recipe.html">Recipe</a>
                     <a href="tips.html">Tips</a>
-                    <a href="howtos.html">How-tos</a>
                     <a href="aboutus.html">About us</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -50,3 +53,156 @@
             </nav>
 
         </header>
+        <!----------ABOUT US---------->
+
+        <div class="about">
+            <section>
+                <h2>
+                    About us
+                </h2>
+                <p>
+
+                    Welcome to BonAppetit!, a delightful journey into the world of culinary excellence. We are a team of passionate food enthusiasts and seasoned chefs who share a common love for all things food-related. Our mission is to inspire and empower home cooks, foodies, and anyone with a craving for delicious adventures in the kitchen.
+                </p>
+            </section>
+            <section>
+                <h2>Our Story</h2>
+                <p>
+
+                    Our culinary journey began with a simple idea – to share our love for food and cooking with the world. What started as a small cooking blog has since grown into a thriving community of food enthusiasts. We believe that everyone can become a kitchen maestro with the right guidance, a dash of creativity, and a pinch of passion. Our website is the place where these ingredients come together.
+                </p>
+
+            </section>
+        </div>
+
+
+
+        <div class="us">
+            <section id="recipes">
+                <h3>Recipes</h3>
+                <p>
+                    Explore a treasure trove of meticulously crafted recipes, from classic comfort foods to international delicacies. Our culinary experts work tirelessly to bring you step-by-step instructions and insider tips to help you create restaurant-quality dishes in your own kitchen.
+                </p>
+            </section>
+
+            <section id="cookingtips">
+                <h3>Cooking Tips</h3>
+                <p>
+                    We're not just about sharing recipes; we're here to help you become a more confident and skilled home chef. Find handy cooking tips, techniques, and kitchen hacks to make your culinary journey more enjoyable.
+            </section>
+
+            <section id="foodculture">
+                <h3>Food Culture</h3>
+                <p>
+                    Discover the rich tapestry of food cultures from around the globe. We're passionate about exploring the history, traditions, and stories behind the dishes we love. Let us take you on a culinary adventure through words and flavors.
+                </p>
+            </section>
+        </div>
+
+
+        <!----------CONTACT---------->
+        <h2 class="intouch"> Keep in touch!</h2>
+        <div class="contact-section">
+
+
+                <section>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>Address</h3>
+                    <p>2320 Divi Road, San Fracisco, CA</p>
+                </section>
+
+                <section>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3> Email</h3>
+                    <p>bonappetit@gmail.com</p>
+                </section>
+
+                <section>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <h3>Phone</h3>
+                    <p>1 (203) 346-3592</p>
+                </section>
+            </div>
+       
+        <div class="contact-container">
+        <div class="contactform">
+            <form action="action_page.php">
+                <!----------The action attribute specifies where to send the form-data when a form is submitted.
+
+---------->
+
+                <label for="fname">First Name</label>
+                <!----------Define First Name lable ---------->
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <!----------Input first name ---------->
+                <label for="lname">Last Name</label>
+                <!----------Define Last Name lable ---------->
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <!----------Input last name ---------->
+
+                <label for="country">Country</label>
+                <!----------Define Country lable ---------->
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <!----------Selection with different country options ---------->
+                </select>
+
+                <label for="subject">Subject</label>
+                <!----------Define Subject lable ---------->
+                <textarea id="subject" name="subject" placeholder="Write your questions/feedback here" style="height:200px"></textarea>
+                <!----------Write questions/feedback here ---------->
+                <input type="submit" value="Submit">
+                <!----------Submit button ---------->
+            </form>
+        </div>
+            </div>
+
+
+
+
+        <!----------FOOTER---------->
+        <footer>
+
+            <section class="footer">
+                <div>
+                    <section>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <h3> Follow us</h3>
+                        <a id="FB" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a id="IG" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </section>
+
+                    <form action="action_page.php">
+                        <div class="container">
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="text" placeholder="Email address" name="mail" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                            </label>
+                        </div>
+
+                        <div class="container">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </form>
+
+                </div>
+
+                <ul>
+
+
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="PDF/privacy%20policy.pdf">Privacy Policy</a></li>
+                    <li><a href="PDF/short_guide_to_copyright.pdf">Copyright Policy</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+
+                </ul>
+            </section>
+
+
+
+
+
+        </footer>
