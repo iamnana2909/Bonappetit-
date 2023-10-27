@@ -33,9 +33,8 @@
 
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="recipes.html">Recipe</a>
+                    <a href="recipe.html">Recipe</a>
                     <a href="tips.html">Tips</a>
-                    <a href="howtos.html">How-tos</a>
                     <a href="aboutus.html">About us</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -51,7 +50,7 @@
             <form action="#">
                 <input type="text" placeholder=" Search" name="search">
                 <button>
-                    <i class="fa fa-search" style="font-size: 10px;">
+                    <i class="fa fa-search">
                     </i>
                 </button>
             </form>
@@ -96,9 +95,6 @@
                 </div>
 
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -141,7 +137,7 @@
                 }
 
             </script>
-            
+
 
 
         </article>
@@ -178,84 +174,127 @@
 
         </div>
         <!----------CONTENT AREA 2---------->
-        <section id="toprecentc">
-            <h2>Top Recent</h2>
-            <div class="toprecentg">
-                <div class="toprecent">
-                    <section>
+        <h2>Top Recent</h2>
+        <article class="toprecentg">
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/tofu.png" alt="tofu nuggets" width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Crispy Tofu Nuggets</h2>
                         <p>Try our delicious and crunchy tofu nuggets - a satisfying plant-based twist on a classic favorite. Perfect for snacking or as a main course!</p>
-                        <img src="images/tofu.png" alt="tofu nuggets" width="271" height="181">
-                    </section>
+                    </div>
 
-                    <section>
+                </a>
+
+            </section>
+
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/red.png" alt="Red-Eye Gravy" width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Red-Eye Gravy</h2>
                         <p>a Southern classic made from just two ingredients — coffee and country ham — that you definitely have to try.</p>
-                        <img src="images/red.png" alt="Red-Eye Gravy" width="271" height="181">
-                    </section>
+                    </div>
 
-                    <section>
+                </a>
+            </section>
+
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/vn.png" alt="Vietnamese Fish Soup" width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Vietnamese Fish Soup With Tomato and Dill</h2>
                         <p>Light, delicate, and refreshing, this Northern Vietnamese soup combines fresh fish with a pleasantly tart tomato and dill broth.</p>
-                        <img src="images/vn.png" alt="Vietnamese Fish Soup" width="271" height="181">
-                    </section>
+                    </div>
+                </a>
+            </section>
 
-                    <section>
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/chinese.png" alt="Chinese-Style Hot Pot" width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Chinese-Style Hot Pot With Rich Broth, Shrimp Balls, and Dipping Sauces</h2>
                         <p> Indulge in a rich, savory broth paired with succulent shrimp balls and an array of tantalizing dipping sauces for an authentic Chinese hot pot experience.</p>
-                        <img src="images/chinese.png" alt="Chinese-Style Hot Pot" width="271" height="181">
-                    </section>
+                    </div>
+                </a>
+            </section>
 
-                    <section>
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/thai.png" alt="Tom Yam Pla " width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Tom Yam Pla (Thai Spicy and Sour Soup with Fish)</h2>
                         <p> This fish version of tom yam is sour, spicy, and salty, with aromatic notes of lemongrass and makrut lime leaves.</p>
-                        <img src="images/thai.png" alt="Tom Yam Pla " width="271" height="181">
-                    </section>
+                    </div>
+                </a>
+            </section>
 
-                    <section>
+            <section class="toprecent">
+                <a href="#">
+                    <figure class="thumbnail">
+                        <img src="images/lao.png" alt="Lao Food" width="271" height="181">
+                    </figure>
+                    <div class="card-content">
                         <h2>Lao Food 101: Essential Dishes From Laos and Isan</h2>
                         <p> The cuisine of Laos is unassuming but packed with flavor, marrying herbs and chiles with fermented meat and fish.</p>
-                        <img src="images/lao.png" alt="Lao Food" width="271" height="181">
-                    </section>
-                </div>
+                    </div>
+                </a>
+            </section>
 
-            </div>
+        </article>
 
-        </section>
 
-        
+
+
+
+
 
         <!----------FOOTER---------->
         <footer>
 
             <section class="footer">
-                <div>
+                <div class="footerleft">
                     <section>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                         <h3> Follow us</h3>
-                        <a id="FB" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a id="IG" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+
+
                     </section>
 
                     <form action="action_page.php">
                         <div class="container">
                             <input type="text" placeholder="Name" name="name" required>
                             <input type="text" placeholder="Email address" name="mail" required>
-                            <label>
+                            
+                        </div>
+                        <label>
                                 <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
                             </label>
-                        </div>
 
                         <div class="container">
                             <input type="submit" value="Subscribe">
                         </div>
                     </form>
-                    
+
                 </div>
 
-                <ul>
+                <ul class="footerlink">
 
-                    
+
                     <li><a href="#Home">Home</a></li>
                     <li><a href="PDF/privacy%20policy.pdf">Privacy Policy</a></li>
                     <li><a href="PDF/short_guide_to_copyright.pdf">Copyright Policy</a></li>
@@ -263,21 +302,7 @@
 
                 </ul>
             </section>
-
-
-
-
-
         </footer>
-
-
-    </div>
-
-
-
-
-
-
+</div>
 </body>
-
 </html>
