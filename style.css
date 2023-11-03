@@ -17,20 +17,35 @@ COLOURS
 /* Import Space Grotesk and Open Sans fonts from Google font */
 
 /* GLOBAL STYLE */
+body {
+    margin: 0px;
+}
+
 a {
+    font-size: 1.2em;
     text-decoration: none;
 }
 
 p {
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2em;
 
 }
 
 h1 {
+    color: darkred;
+    font-size: 3em;
     font-family: 'Berkshire Swash', serif;
 }
 
 h2 {
+    color: darkred;
+    font-size: 2em;
+    font-family: 'Berkshire Swash', serif;
+}
+
+h3 {
+    font-size: 1.2em;
     font-family: 'Berkshire Swash', serif;
 }
 
@@ -103,9 +118,6 @@ header {
     }
 }
 
-
-
-
 /* Style the links inside the navigation bar */
 .topnav a {
     font-family: 'Space Grotesk', sans-serif;
@@ -123,12 +135,6 @@ header {
     text-decoration-line: underline;
 }
 
-
-.topnav span {
-    padding: 10px 20px 15px 20px;
-    background-color: #e46600;
-    color: #170002
-}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -226,17 +232,6 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -262,7 +257,7 @@ header {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 4
     }
 
     to {
@@ -271,10 +266,13 @@ header {
 }
 
 /* CONTENT AREA 2*/
+#topre {
+    color: darkred;
+    display: grid;
+    place-items: center;
+}
 
 .toprecent a {
-
-
     text-decoration: none;
     background-color: white;
 
@@ -290,10 +288,9 @@ header {
 }
 
 .toprecent p {
+    font-size: 1em;
     color: #170002;
-
-
-
+    margin: 20px auto;
 }
 
 .card-content {
@@ -321,6 +318,7 @@ header {
         flex: 0 1 calc(50% - 0.5em);
         display: flex;
     }
+
 }
 
 
@@ -343,10 +341,16 @@ header {
 
 
 /* FAQs */
+#faqs {
+    color: darkred;
+    display: grid;
+    place-items: center;
+}
+
 details {
     background-color: darkred;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2em;
 }
 
 summary {
@@ -388,7 +392,7 @@ details[open] div {
     font-size: 10px;
     text-align: center;
     text-decoration: none;
-    border-radius: 20%;
+
 }
 
 /* Add a hover effect */
@@ -511,12 +515,11 @@ footer a {
     .footerlink {
         padding-left: 0px;
         grid-column: 2/3;
-        direction:
     }
 }
 
 
-/* Banner
+/* BANNER TIPS
 ------------------------------------------------- */
 .banner-text {
     position: absolute;
@@ -567,7 +570,7 @@ footer a {
 
 @media screen and (max-width: 400px) {
     .banner-text {
-        font-size: 30%;
+        font-size: 20%;
     }
 }
 
@@ -579,11 +582,13 @@ footer a {
     grid-template-rows: auto;
 
 
+
 }
 
 .ourrecipe {
     grid-column: 2/4;
     grid-row: 1/2;
+    margin: 80px;
 }
 
 .ourrecipe h1 {
@@ -591,6 +596,7 @@ footer a {
 }
 
 .trending {
+    margin: 80px;
     display: grid;
     grid-column: 1/5;
     text-align: center;
@@ -602,6 +608,7 @@ footer a {
 }
 
 .trending img {
+    margin: 20px;
     max-width: 100%;
     height: auto;
 
@@ -619,8 +626,23 @@ footer a {
 }
 
 .trending a {
-    color: darkred;
-    font-size: 1.5em;
+    display: inline-block;
+    background-color: darkred;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 150px;
+    margin: 0 auto;
+    transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+.trending a:hover {
+    transform: rotate(360deg);
+    opacity: 0.2;
 }
 
 
@@ -629,6 +651,15 @@ footer a {
     margin-bottom: 100px;
     grid-column: 2/3;
     grid-row: 3/4;
+
+}
+
+.popular section {
+    background-color: #170002;
+    color: white;
+
+    margin-bottom: 30px;
+    padding: 30px;
 
 }
 
@@ -652,6 +683,33 @@ footer a {
     /* Horizontally center align items */
 }
 
+.classic p {
+    padding-top: 20px;
+   margin: 0 auto;
+    
+}
+
+.classic a {
+    display: inline-block;
+    background-color: darkred;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+    transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.classic a:hover {
+    transform: rotate(360deg);
+    opacity: 0.2;
+}
+
 .classic section {
 
     display: grid;
@@ -672,6 +730,7 @@ footer a {
 }
 
 .popular img {
+    text-align: center;
     max-width: 100%;
     height: auto;
 
@@ -750,14 +809,28 @@ footer a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 15px;
+}
 
+.tips h3 {
+    color: darkred;
+
+}
+
+.tips p {
+    color: #170002;
+    margin: 0 auto;
 
 }
 
 .tips section {
+    background-color: white;
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
+}
+
+.tips section:hover {
+    opacity: 0.5;
 }
 
 .tips img {
@@ -773,25 +846,101 @@ footer a {
     text-align: center;
     justify-content: center;
     padding: 100px;
-    
-   
-    
+    background-color: white;
+    border-radius: 20%;
+    margin: 50px;
+    animation-duration: 4s;
+    animation-name: about;
 }
+
+@keyframes about {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #170002;
+        color: white;
+    }
+}
+
+#recipes {
+    border: solid 1px;
+    border-radius: 0 20px 20px 0;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+#recipes:hover {
+    background-color: darkred;
+    color: white;
+    transform: scale(1.1)
+}
+
+#foodculture {
+    border: solid 1px;
+    border-radius: 0 20px 20px 0;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+#foodculture:hover {
+    background-color: darkred;
+    color: white;
+    transform: scale(1.1)
+}
+
+#cookingtips {
+    border: solid 1px;
+    border-radius: 20px 0 0 20px;
+    width: 1000px;
+    margin-bottom: 20px;
+
+    margin-left: auto
+}
+
+#cookingtips:hover {
+    background-color: darkred;
+    color: white;
+    transform: scale(1.1)
+}
+
 .us {
     display: flex;
     flex-wrap: wrap;
-        
-    }
+}
+
+.us h3,
+p {
+    margin-left: 50px;
+}
+
 .intouch {
     text-align: center;
-}  
+}
+
 .contact-section {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 15px;
     justify-content: center;
     text-align: center;
+    animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
     }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* Contact form
 ------------------------------------------------- */
@@ -828,15 +977,16 @@ input[type=submit] {
 .contact-container {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
+
 .contactform {
-    
+
     width: 650px;
     border-radius: 5px;
 
     padding: 20px;
-    margin:auto;
+    margin: auto;
 }
 
 iframe {
