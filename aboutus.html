@@ -105,59 +105,59 @@
         <div class="contact-section">
 
 
-                <section>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <h3>Address</h3>
-                    <p>2320 Divi Road, San Fracisco, CA</p>
-                </section>
+            <section>
+                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 2em;"></i>
+                <h3>Address</h3>
+                <p>2320 Divi Road, San Fracisco, CA</p>
+            </section>
 
-                <section>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h3> Email</h3>
-                    <p>bonappetit@gmail.com</p>
-                </section>
+            <section>
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;" ></i>
+                <h3> Email</h3>
+                <p>bonappetit@gmail.com</p>
+            </section>
 
-                <section>
-                    <i class="fa fa-mobile" aria-hidden="true"></i>
-                    <h3>Phone</h3>
-                    <p>1 (203) 346-3592</p>
-                </section>
-            </div>
-       
+            <section>
+                <i class="fa fa-mobile" aria-hidden="true" style="font-size: 2em;"></i>
+                <h3>Phone</h3>
+                <p>1 (203) 346-3592</p>
+            </section>
+        </div>
+
         <div class="contact-container">
-        <div class="contactform">
-            <form action="action_page.php">
-                <!----------The action attribute specifies where to send the form-data when a form is submitted.
+            <div class="contactform">
+                <form action="action_page.php">
+                    <!----------The action attribute specifies where to send the form-data when a form is submitted.
 
 ---------->
 
-                <label for="fname">First Name</label>
-                <!----------Define First Name lable ---------->
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <!----------Input first name ---------->
-                <label for="lname">Last Name</label>
-                <!----------Define Last Name lable ---------->
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <!----------Input last name ---------->
+                    <label for="fname">First Name</label>
+                    <!----------Define First Name lable ---------->
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <!----------Input first name ---------->
+                    <label for="lname">Last Name</label>
+                    <!----------Define Last Name lable ---------->
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <!----------Input last name ---------->
 
-                <label for="country">Country</label>
-                <!----------Define Country lable ---------->
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    <!----------Selection with different country options ---------->
-                </select>
+                    <label for="country">Country</label>
+                    <!----------Define Country lable ---------->
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <!----------Selection with different country options ---------->
+                    </select>
 
-                <label for="subject">Subject</label>
-                <!----------Define Subject lable ---------->
-                <textarea id="subject" name="subject" placeholder="Write your questions/feedback here" style="height:200px"></textarea>
-                <!----------Write questions/feedback here ---------->
-                <input type="submit" value="Submit">
-                <!----------Submit button ---------->
-            </form>
-        </div>
+                    <label for="subject">Subject</label>
+                    <!----------Define Subject lable ---------->
+                    <textarea id="subject" name="subject" placeholder="Write your questions/feedback here" style="height:200px"></textarea>
+                    <!----------Write questions/feedback here ---------->
+                    <input type="submit" value="Submit">
+                    <!----------Submit button ---------->
+                </form>
             </div>
+        </div>
 
 
 
@@ -166,22 +166,27 @@
         <footer>
 
             <section class="footer">
-                <div>
+                <div class="footerleft">
                     <section>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                         <h3> Follow us</h3>
-                        <a id="FB" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a id="IG" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+
+
                     </section>
 
                     <form action="action_page.php">
                         <div class="container">
                             <input type="text" placeholder="Name" name="name" required>
                             <input type="text" placeholder="Email address" name="mail" required>
-                            <label>
-                                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                            </label>
+
                         </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                        </label>
 
                         <div class="container">
                             <input type="submit" value="Subscribe">
@@ -190,7 +195,7 @@
 
                 </div>
 
-                <ul>
+                <ul class="footerlink">
 
 
                     <li><a href="#Home">Home</a></li>
@@ -200,9 +205,15 @@
 
                 </ul>
             </section>
-
-
-
-
-
         </footer>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
